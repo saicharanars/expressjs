@@ -1,0 +1,38 @@
+.header-main{
+    width: 100%;
+    height: 3.5rem;
+    background-color: rgb(89, 219, 219);
+    padding: 0 1.5rem,
+}
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.header-nav{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.header-nav-itemlist{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+main{
+    padding: 0 1.5rem;
+}
+.header-navitem{
+    margin: 0 1rem;
+    padding: 0;
+}
+.header-navitem a{
+    text-decoration: none;
+    color: white;
+}
+.header-navitem a:hover,
+
+.header-navitem a:active {
+    color: rgb(87, 134, 134);
+}

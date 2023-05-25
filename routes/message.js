@@ -12,9 +12,13 @@ router.get("/", (req, res, next) => {
     </form>`);
   });
 });
-router.post("/",(req,res,next)=>{
-    fs.appendFile("message.txt",`${req.body.username}:${req.body.message}  `,(err)=>{
-        err==true?console.log(err):res.redirect("/")
-    });
+router.post("/", (req, res, next) => {
+  fs.appendFile(
+    "message.txt",
+    `${req.body.username}:${req.body.message}  `,
+    (err) => {
+      err == true ? console.log(err) : res.redirect("/");
+    }
+  );
 });
-module.exports=router;
+module.exports = router;

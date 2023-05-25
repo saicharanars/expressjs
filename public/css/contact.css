@@ -1,0 +1,69 @@
+.header-main{
+    width: 100%;
+    height: 3.5rem;
+    background-color: rgb(89, 219, 219);
+    padding: 0 1.5rem,
+}
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.header-nav{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.header-nav-itemlist{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+main{
+    padding: 0 1.5rem;
+}
+.header-navitem{
+    margin: 0 1rem;
+    padding: 0;
+}
+.header-navitem a{
+    text-decoration: none;
+    color: white;
+}
+.header-navitem a:hover,
+
+.header-navitem a:active {
+    color: rgb(87, 134, 134);
+}
+.formcontrol{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+    gap: 10px;
+}
+.formcontrol input{
+    display: block;
+    width: 100%;
+    height: 2rem;
+    border: 1px solid aqua;
+    border-radius: 2px;
+
+}
+button{
+    font: inherit;
+    width: 100%;
+    height: 2rem;
+    border: 1px solid black;
+    background-color:aqua;
+    border-radius: 3px;
+
+}
+.product-form{
+    display: block;
+    width: 30rem;
+    max-width: 90%;
+    margin: auto;
+}

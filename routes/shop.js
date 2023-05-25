@@ -1,9 +1,25 @@
+const path = require("path");
+const rootDir = require("../util/path");
 const express = require("express");
 const router = express.Router();
-router.get("/", (req, res, next) => {
+router.get("/shop", (req, res, next) => {
   console.log("in middleware");
-  res.send("<h1>hello from express shop</h1>");
+  console.log(path.join(rootDir,"../","views","shop.html"));
+  res.sendFile(path.join(rootDir,"../","views","shop.html"));
   //next();
   //next();//allow request to continue next request
 });
+router.get("/contact", (req, res, next) => {
+  console.log("in middleware");
+  console.log(path.join(rootDir,"../","views","shop.html"));
+  res.sendFile(path.join(rootDir,"../","views","contact.html"));
+  
+});
+router.post("/success", (req, res, next) => {
+  console.log(req.body);
+  res.sendFile(path.join(rootDir,"../","views","success.html"));
+});
+
+
+
 module.exports = router;
