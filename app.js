@@ -4,6 +4,7 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const app = express();
 const rootDir = require("./util/path");
+const errorcontroller=require('./controllers/error')
 
 const adminRoutes = require("./routes/admin");
 const shopRoutes = require("./routes/shop");
@@ -19,9 +20,6 @@ app.use(loginRoutes);
 
 app.use(messageRoutes);
 console.log((path.join(__dirname,'public')));
-app.use((req, res, next) => {
-  //res.status(404).send("<h1>page not found</h1>");
-  res.status(404).sendFile(path.join(rootDir,"../","views","404.html"));
-});
+app.use(errorcontroller.get404);
 
 app.listen(4000);
