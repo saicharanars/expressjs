@@ -31,9 +31,11 @@ main{
     text-decoration: none;
     color: white;
 }
-.header-navitem a:hover,
+.header-navitem a:hover{
+    color: beige;
+}
 
-.header-navitem a:active {
+header-navitem a:focus {
     color: rgb(87, 134, 134);
 }
 .formcontrol{
